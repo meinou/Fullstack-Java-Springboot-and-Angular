@@ -1,0 +1,5 @@
+<ul class="ticket" *ngIf="tickets">
+  <li *ngFor="let ticket of tickets">
+    <span class="badge">{{ticket.id}}</span>, {{ticket.title}}, {{ticket.lastModyfied}}
+  </li>
+</ul>

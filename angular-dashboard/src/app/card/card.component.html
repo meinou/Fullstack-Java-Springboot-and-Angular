@@ -1,0 +1,27 @@
+
+<div class="{{type}} card" >
+  <div class="card-header">
+    <span class="glyphicon {{icon}} icon"></span>
+    <div class="amount">
+      <span>{{amount}}</span>
+    </div>
+    <p>{{title}}</p>
+  </div> 
+  <p>View Details  
+    <span class="glyphicon glyphicon-circle-arrow-right details-btn" [ngClass]="{ 'expanded': !!tickets }" (click)="toggleDetails()"></span>
+  </p>
+  <div class="details">
+    <ul>
+      <li *ngFor="let ticket of tickets">
+          <!-- <a routerLink="/tickets/{{type}}/{{ticket.id}}">{{ticket.title}}</a> -->
+          <!-- <span routerLink="/tickets/{{type}}/{{ticket.id}}" [routerLink]="['/ticket', ticket.type, ticket.id]" >{{ticket.title}}</span> -->
+          <span [routerLink]="['/tickets', ticket.type, ticket.id]" >{{ticket.title}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
+<!-- <router-outlet name="popup"></router-outlet> -->
+<!-- <app-tickets-task></app-tickets-task> -->
+
+<!-- <p>View Details  <a routerLink="[{ outlets: {popup: ['{{rout}}'] } } ]'" class="glyphicon glyphicon-circle-arrow-right {{type}}" style="border: 0px; float:right;" ></a></p>  -->

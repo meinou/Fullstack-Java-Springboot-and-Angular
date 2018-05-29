@@ -1,0 +1,10 @@
+<app-panel title="Notifications" icon="glyphicon-info-sign" type="notifications">
+  <ul>
+    <li *ngFor="let notification of notifications">
+        <span class="glyphicon {{icons[notification.type]}}"></span>
+        <span> New {{notification.type}} </span>
+        <span class="time">{{notification.created | date : 'shortTime' }}</span>
+    </li>
+  </ul>
+</app-panel>
+

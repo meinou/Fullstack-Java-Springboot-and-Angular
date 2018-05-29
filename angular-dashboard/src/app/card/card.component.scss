@@ -1,0 +1,110 @@
+.task {
+    border: 2px solid #5BB85D;
+    background-color: transparent;
+    /* #F3F1F4 */
+    /* chart-color:#B6DFC1; */
+    color: #5BB85D;
+    .card-header {
+        background-color: #5BB85D;
+    }
+}
+
+.support {
+    border: 2px solid	#C95F58;
+    background-color: 	transparent;
+    /* :	#F4F3F1 */
+    color: #C95F58;
+    .card-header {
+        background-color: #C95F58;
+    }
+}
+
+.comment {
+    border: 2px solid #417DB4;
+    background-color: transparent;
+    /* chart-color: #B5B5EB; */
+    color: #417DB4;
+    .card-header {
+        background-color: #417DB4;
+    }
+}
+
+.order {
+    border: 2px solid #E7AD5A;
+    background-color: 	transparent;
+    color: #E7AD5A;
+    /* chart-color: #FFD699; */
+    .card-header {
+        background-color: #E7AD5A;
+    }
+}
+
+p {
+    height: 30%;
+    float: bottom;
+    
+}
+a {
+    float:right;
+    border: 0px;
+    padding: 10px;
+}
+
+$detailsPadding: 15px;
+
+.card {
+    padding: 0px;
+    border-radius: 4px;
+    min-height: 140px;
+
+    .card-header {
+        color: white;
+        min-height: 90px;
+        
+        .amount {
+            font-size: 3em;
+            text-align: right;
+            width: 100%;
+            padding-right: $detailsPadding;
+            padding-top: $detailsPadding - 5;
+            
+        }
+
+        .icon {
+            font-size: 5em;
+            padding-left: $detailsPadding;
+            float:left; 
+            padding-top: $detailsPadding;
+            //padding:6px; font-size: 2.9em;
+        }
+    }
+
+    .details-btn {
+        float:right;
+        &:hover {
+            cursor: pointer;
+        }
+        &.expanded {
+            transform: rotate(90deg);
+        }
+        padding: $detailsPadding/2 - 4;
+    }
+    
+    .details {
+        font-size: 13px;
+        width: 100%;
+        padding: 0px;
+        align-content: left;
+        li {
+            padding: 1px 0px;
+            list-style: none;
+            text-align: left;
+            span {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

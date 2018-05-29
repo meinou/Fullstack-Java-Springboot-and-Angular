@@ -1,0 +1,9 @@
+<ul class="users">
+  <li *ngFor="let user of users">
+    <span class="badge">{{user.id}}</span> {{user.userName}}
+  </li>
+
+  <input [(ngModel)]='name'>
+  <button (click)="getUserByName(name)"><a routerLink="/users/login/{{name}}">show</a></button>
+
+  <div *ngIf="user1">{{user1.name}}, {{user1.email}}</div>

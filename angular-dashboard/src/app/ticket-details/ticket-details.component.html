@@ -1,0 +1,12 @@
+<div class = "wrap">
+  <p>Created or changed: {{ticket.lastModified | date: shortDate}}</p>
+  <div class="details"> {{ticket.title}}</div>
+  <div>
+      {{ticket.description}}
+  </div>
+</div>
+<button (click)="resolve()">Resolve</button>
+<div class="resolved" *ngIf="resolved">Resolved!</div>
+
+
+

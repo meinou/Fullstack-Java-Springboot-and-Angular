@@ -1,0 +1,64 @@
+// .task{
+//     height: 100px;
+// }
+
+#tickets_board {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    app-card {
+        width: 24%;
+        height: 100%;
+    }
+}
+
+#panels {
+    width:100%;
+    padding-top: 10px;
+}
+
+div {
+    width: 100%;   
+}
+
+.navbar-fixed-left {
+    width: 250px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 215px;
+}
+
+.navbar-fixed-left + .container {
+    padding-left: 270px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 250px;
+}
+
+.navbar-fixed-left .navbar-collapse,
+.navbar-fixed-left .navbar-form {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-fixed-left .search-menu-item {
+    margin: 16px 0px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+.dashboard-content {
+    margin-top: 90px;
+}
